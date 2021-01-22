@@ -26,7 +26,10 @@ end
 
 group :development do
   gem 'guard'
-  gem 'guard-minitest'
+  gem 'guard-bundler', require: false
+  gem 'guard-livereload'
+  gem 'guard-minitest', require: false
+  gem 'guard-rails', require: false
   gem 'minitest'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'

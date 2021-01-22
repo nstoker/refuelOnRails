@@ -81,7 +81,11 @@ GEM
     concurrent-ruby (1.1.8)
     crass (1.0.6)
     docile (1.3.2)
+    em-websocket (0.5.2)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.6.0)
     erubi (1.10.0)
+    eventmachine (1.2.7)
     ffi (1.14.2)
     formatador (0.2.5)
     globalid (0.4.2)
@@ -95,10 +99,23 @@ GEM
       pry (>= 0.9.12)
       shellany (~> 0.0)
       thor (>= 0.18.1)
+    guard-bundler (3.0.0)
+      bundler (>= 2.1, < 3)
+      guard (~> 2.2)
+      guard-compat (~> 1.1)
     guard-compat (1.2.1)
+    guard-livereload (2.5.2)
+      em-websocket (~> 0.5)
+      guard (~> 2.8)
+      guard-compat (~> 1.0)
+      multi_json (~> 1.8)
     guard-minitest (2.4.6)
       guard-compat (~> 1.2)
       minitest (>= 3.0)
+    guard-rails (0.8.1)
+      guard (~> 2.11)
+      guard-compat (~> 1.0)
+    http_parser.rb (0.6.0)
     i18n (1.8.7)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.1)
@@ -120,6 +137,7 @@ GEM
     mini_portile2 (2.5.0)
     minitest (5.14.3)
     msgpack (1.3.3)
+    multi_json (1.15.0)
     nenv (0.3.0)
     nio4r (2.5.4)
     nokogiri (1.11.1)
@@ -241,7 +259,10 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   guard
+  guard-bundler
+  guard-livereload
   guard-minitest
+  guard-rails
   jbuilder (~> 2.7)
   listen (~> 3.3)
   minitest
