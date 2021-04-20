@@ -8,10 +8,10 @@ ruby '2.7.2'
 gem 'jbuilder', '~> 2.7'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
-gem 'rails', '~> 6.1.0'
-gem 'sass-rails', '>= 6'
+gem 'rails', '~> 6.1.2', '>= 6.1.2.1'
+gem 'sass-rails', '>= 6.0.0'
 gem 'turbolinks', '~> 5'
-gem 'webpacker', '~> 5.0'
+gem 'webpacker', '~> 5.2', '>= 5.2.1'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
