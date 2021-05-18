@@ -8,7 +8,7 @@ ruby '2.7.2'
 gem 'jbuilder', '~> 2.7'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
-gem 'rails', '~> 6.1.2', '>= 6.1.2.1'
+gem 'rails', '~> 6.1.1'
 gem 'sass-rails', '>= 6.0.0'
 gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 5.2', '>= 5.2.1'
@@ -43,10 +43,10 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '>= 3.26'
+  gem 'capybara', '>= 3.34.0'
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
-  gem 'webdrivers'
+  gem 'webdrivers', '>= 4.5.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
