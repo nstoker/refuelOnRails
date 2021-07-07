@@ -43,7 +43,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '>= 3.34.0'
+  gem 'capybara', '>= 3.35.3'
   gem 'selenium-webdriver'
   gem 'simplecov', require: false
   gem 'webdrivers', '>= 4.5.0'
